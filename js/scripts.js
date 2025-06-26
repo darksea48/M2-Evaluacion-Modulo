@@ -96,7 +96,7 @@ $(document).ready(function() {
         // --- Mostrar resultado ---
         if (isValid) {
             // Si todo es válido, mostrar mensaje de éxito
-            $('.modal-body').html('<div class="alert alert-success">¡Gracias por contactarnos! Te enviaremos más información a la brevedad.</div>');
+            $('#contactModalContent').html('<div class="alert alert-success">¡Gracias por contactarnos! Te enviaremos más información al correo señalado a la brevedad.</div>');
 
             // Opcional: cerrar el modal después de un par de segundos
             setTimeout(function() {
