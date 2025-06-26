@@ -64,7 +64,51 @@ $(document).ready(function() {
         });
     });
 
-    
+    // --- VALIDACIÓN DEL FORMULARIO DE CONTACTO ---
+    // Usamos delegación de eventos porque el formulario se carga dinámicamente.
+    // El evento 'submit' se escucha en el modal, que es un elemento estático.
+    $('#contactModal').on('submit', '#contactForm', function(event) {
+        event.preventDefault(); // Prevenir el envío real del formulario
+
+        // Limpiar estados de validación anteriores
+        $('.form-control').removeClass('is-invalid');
+        $('#form-messages').empty();
+
+        let isValid = true;
+
+        // --- Obtener y validar valores ---
+        const name = $('#name').val().trim();
+        const email = $('#email').val().trim();
+
+        // 1. Validar Nombre
+        if (name === '') {
+            $('#name').addClass('is-invalid');
+            isValid = false;
+        }
+
+        // 2. Validar Email (formato básico)
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (email === '' || !emailRegex.test(email)) {
+            $('#email').addClass('is-invalid');
+            isValid = false;
+        }
+
+        // --- Mostrar resultado ---
+        if (isValid) {
+            // Si todo es válido, mostrar mensaje de éxito
+            $('.modal-body').html('<div class="alert alert-success">¡Gracias por contactarnos! Te enviaremos más información a la brevedad.</div>');
+
+            // Opcional: cerrar el modal después de un par de segundos
+            setTimeout(function() {
+                $('#contactModal').modal('hide');
+            }, 3000);
+
+        } else {
+            // Si hay errores, mostrar un mensaje general de error
+            $('#form-messages').html('<div class="alert alert-danger">Por favor, corrige los campos marcados en rojo.</div>');
+        }
+    });
+
 });
 
 

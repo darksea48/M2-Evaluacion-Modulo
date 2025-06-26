@@ -3,22 +3,25 @@
         <div class="col-12">
             <p class="text-justify">Envíanos tus datos para poder enviarte más información y contactarte para futuros materiales que pueden ser de gran utlidad para tí.</p>
         </div>
-        <form id="#formContactModal">
-            <div class="col-12 mb-1">
+        <!-- Reemplaza el contenido de modal.html con este código -->
+        
+        <div id="form-messages"></div>
+        <form id="contactForm" novalidate>
+            <div class="mb-3">
                 <label for="name" class="form-label">Nombre completo</label>
                 <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre completo" required>
+                <div class="invalid-feedback">
+                    Por favor, ingresa tu nombre completo.
+                </div>
             </div>
-            <div class="col-12 mb-1">
+            <div class="mb-3">
                 <label for="email" class="form-label">Correo electrónico</label>
                 <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
+                <div class="invalid-feedback">
+                    Por favor, ingresa un correo electrónico válido.
+                </div>
             </div>
-            <div class="col-12 mb-3">
-                <label for="fono" class="form-label">Teléfono</label>
-                <input type="tel" class="form-control" id="fono" placeholder="Ingresa tu teléfono">
-            </div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </div>
 </div>
