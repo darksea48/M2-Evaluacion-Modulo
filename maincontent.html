@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- Font Roboto -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>Protege tu Mundo Digital</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black bg-gradient">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-shield-fill-check"></i><i class="bi bi-pc-display"></i>
+            </a>
+            <!-- Botón Toggler para pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Contenido de la barra de navegación colapsable -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Lo que debes saber</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lecciones.html">Como protegerte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light btn-sm text-primary" href="">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin Navbar -->
+
+    <!-- Sección "¿Por Qué la Ciberseguridad?" -->
+    <section id="why-cybersecurity" class="py-5 mb-3 bg-dark bg-gradient">
+        <div class="container">
+            <h2 class="section-title">¿Por qué es importante la Ciberseguridad?</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card w-100 h-100 bg-light text-dark shadow zoom">
+                        <div class="card-body text-center">
+                            <i class="fas fa-lock"></i>
+                            <h3>Protege tu Privacidad</h3>
+                            <p>Evita que tus datos personales caigan en manos equivocadas y mantén tu vida online segura.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card w-100 h-100 bg-light text-dark shadow zoom">
+                        <div class="card-body text-center">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <h3>Evita Fraudes Financieros</h3>
+                            <p>Aprende a identificar estafas y protege tu dinero de ataques de phishing y malware.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card w-100 h-100 bg-light text-dark shadow zoom">
+                        <div class="card-body text-center">
+                            <i class="fas fa-globe"></i>
+                            <h3>Navega con Seguridad</h3>
+                            <p>Descubre cómo navegar por internet de forma segura y proteger tus dispositivos de virus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card w-100 h-100 bg-light text-dark shadow zoom">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-shield"></i>
+                            <h3>Mantén tus Datos a Salvo</h3>
+                            <p>Domina las mejores prácticas para asegurar tus cuentas y dispositivos contra accesos no autorizados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placeholder para Sección de Cifras y Datos Impactantes -->
+    <section id="stats" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-primary">Cifras y Datos Impactantes</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <h4 class="text-primary"><span class="counter" id="phishing-count" data-target="3">0</span>+ Mil Millones</h4>
+                        <p>Intentos de phishing al año</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <h4 class="text-primary">$<span class="counter" id="cost-count" data-target="4.45">0</span>M</h4>
+                        <p>Costo promedio de una brecha de datos</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <h4 class="text-primary"><span class="counter" id="security-count" data-target="95">0</span>%</h4>
+                        <p>De las brechas de seguridad se deben a error humano</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <!-- Footer -->
+    <footer id="footer" class="bg-dark text-white text-center py-3 mt-5">
+        <p>Douglas Suárez Zamorano</p><p>Copyright 2025 - Todos los derechos reservados</p>
+        <a href="" class="btn btn-outline-light btn-sm">Contáctanos</a>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
