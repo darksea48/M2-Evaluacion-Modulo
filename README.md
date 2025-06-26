@@ -26,7 +26,7 @@ El sitio está construido con un enfoque en la experiencia de usuario, incorpora
 -   **jQuery 3.7.1**: Para la manipulación del DOM, animaciones y la lógica de carga dinámica del modal de contacto.
 -   **Font Awesome 6.5.2**: Iconos para mejorar la interfaz de usuario.
 -   **Google Fonts (Roboto)**: Tipografía para el proyecto.
--   **Swiper.js 11**: Para el carrusel de imágenes (aunque actualmente no se está utilizando en el `index.html` principal, está enlazado).
+-   **Swiper.js 11**: Para dinamismo de las tarjetas de maincontent.html.
 
 ## Estructura del Proyecto
 
