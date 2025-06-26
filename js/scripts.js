@@ -51,5 +51,20 @@ $(document).ready(function() {
     counters.each(function() {
         observer.observe(this);
     });
+
+    // Cargar contenido para el modal
+    $('#contactModal').on('show.bs.modal', function (event) {
+        var modal = $(this);
+        // Load the content of modal.html into the modal-body
+        modal.find('.modal-body').load('modal.html', function(response, status, xhr) {
+            if (status == "error") {
+                modal.find('.modal-body').html("<p>Error al cargar el formulario de contacto. Por favor, inténtalo de nuevo más tarde.</p>");
+                console.error("Error loading modal.html: " + xhr.status + " " + xhr.statusText);
+            }
+        });
+    });
+
+    
 });
+
 

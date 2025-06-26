@@ -52,7 +52,7 @@
                         <a class="nav-link" href="lecciones.html">Como protegerte</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-outline-light btn-sm text-primary" href="">Contáctanos</a>
+                        <a class="nav-link btn btn-outline-light btn-sm text-primary" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contáctanos</a>
                     </li>
                 </ul>
             </div>
@@ -87,6 +87,22 @@
     </header>
     <!-- Fin Header -->
 
+
+    <!-- Generic Contact Modal (to be loaded dynamically) -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contáctanos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Content from modal.html will be loaded here -->
+                    Cargando formulario...
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Scripts -->
     <script src="js/scripts.js"></script>
 </body>

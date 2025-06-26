@@ -49,10 +49,10 @@
                         <a class="nav-link"  href="maincontent.html">Lo que debes saber</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Como protegerte</a>
+                        <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Como protegerte</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-outline-light btn-sm text-primary" href="">Contáctanos</a>
+                        <a class="nav-link btn btn-outline-light btn-sm text-primary" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contáctanos</a>
                     </li>
                 </ul>
             </div>
@@ -364,11 +364,28 @@
     </div>
      
      <!-- Footer -->
-    <footer id="footer" class="bg-dark text-white text-center py-3">
+    <footer id="footer" class="bg-dark text-white text-center py-3 mt-5">
         <p>Douglas Suárez Zamorano</p><p>Copyright 2025 - Todos los derechos reservados</p>
-        <a href="" class="btn btn-outline-light btn-sm">Ir al inicio</a>
+        <a href="#" class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#contactModal">Contáctanos</a>
     </footer>
+    <!-- Fin Footer -->
+
     <!-- Scripts -->
+    <!-- Generic Contact Modal (to be loaded dynamically) -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contáctanos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Content from modal.html will be loaded here -->
+                    Cargando formulario...
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/scripts.js"></script>
 </body>
 </html>
