@@ -1,6 +1,6 @@
 # Protege tu Mundo Digital
 
-[Captura de pantalla del sitio web (ejemplo)](https://i.postimg.cc/gkqZC533/screenshot-sitio.png)
+![Captura de pantalla del sitio web (ejemplo)](https://i.postimg.cc/gkqZC533/screenshot-sitio.png)
 
 ## Descripción del Proyecto
 
