@@ -47,11 +47,11 @@ M2-EvaluacionModulo/
 
 1.  **Clonar el repositorio**:
     ```bash
-    git clone [<URL_DEL_REPOSITORIO>](https://github.com/darksea48/M2-Evaluacion-Modulo)
+    git clone https://github.com/darksea48/M2-Evaluacion-Modulo
     ```
 2.  **Navegar al directorio del proyecto**:
     ```bash
-    cd M2-EvaluacionModulo
+    cd <carpeta_donde_clones>
     ```
 3.  **Abrir los archivos HTML**: Simplemente abre `index.html`, `maincontent.html` o `lecciones.html` en tu navegador web preferido. No se requiere un servidor web para la funcionalidad básica.
 
