@@ -70,3 +70,25 @@ i {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+/* Animación de barrido desde arriba */
+@keyframes sweep-down {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sweep-in {
+    opacity: 0; /* Oculto por defecto para que la animación funcione al cargar */
+    animation: sweep-down 0.8s ease-out forwards;
+}
+
+/* Retraso para el segundo elemento para un efecto escalonado */
+#stats.sweep-in {
+    animation-delay: 0.3s;
+}
