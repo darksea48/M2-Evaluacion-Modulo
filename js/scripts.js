@@ -58,9 +58,8 @@ $(document).ready(function() {
 
         bootbox.dialog({
             title: "Contáctanos",
-            size: 'large',
+            size: 'medium',
             message: `
-            <!-- Generic Contact Modal -->
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -82,20 +81,11 @@ $(document).ready(function() {
                                 Por favor, ingresa un correo electrónico válido.
                             </div>
                         </div>
-                        <!-- El botón de submit se elimina de aquí, usamos los de bootbox -->
                     </form>
                 </div>
             </div>
             `,
             buttons: {
-                        cancel: {
-                            label: "Cancelar",
-                            className: 'btn-danger',
-                            callback: function(){
-                                console.log('Diálogo cancelado por el usuario.');
-                                // No es necesario retornar true, el diálogo se cierra por defecto.
-                            }
-                        },
                         ok: {
                             label: "Enviar",
                             className: 'btn-primary', // Cambiado a primary para consistencia
@@ -148,6 +138,14 @@ $(document).ready(function() {
                                     formMessages.html('<div class="alert alert-danger">Por favor, corrige los campos marcados en rojo.</div>');
                                     return false; // Previene que el diálogo se cierre
                                 }
+                            }
+                        },
+                        cancel: {
+                            label: "Cancelar",
+                            className: 'btn-danger',
+                            callback: function(){
+                                console.log('Diálogo cancelado por el usuario.');
+                                // No es necesario retornar true, el diálogo se cierra por defecto.
                             }
                         }
                     }  
