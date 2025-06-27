@@ -159,7 +159,7 @@ $(document).ready(function() {
         abrirFormModal();
     });
 
-    // arrays de modal de lecciones.html
+    // arrays de modal de lecciones
     var modalLesson = [
         {
             title: '<h5 class="modal-title"><i class="fas fa-key me-2"></i>Contraseñas fuertes</h5>',
@@ -199,6 +199,7 @@ $(document).ready(function() {
         }
     ];
 
+    // arrays de modals de amenazas
     var modalThreat = [
         {
             title: '<h5 class="modal-title">Malware (incluyendo <span class="fst-italic">ransomware</span>)</h5>',
@@ -217,7 +218,8 @@ $(document).ready(function() {
             text: '<p>Ataques que se aprovechan de fallos de seguridad en software o sistemas operativos desactualizados. Los ciberdelincuentes utilizan estas debilidades para obtener acceso no autorizado o instalar malware en los dispositivos.</p> <p><span class="fw-bold">Cómo mitigarlo:</span> <ul> <li>Mantener todos los sistemas, aplicaciones y dispositivos actualizados con los parches de seguridad más recientes.</li> <li>Desinstalar programas innecesarios o que ya no se actualicen.</li> <li>Usar firewalls y herramientas de seguridad para monitorear el tráfico sospechoso.</li> <li>Limitar los permisos y el acceso solo a quienes realmente lo necesiten.</li> </ul></p>',
         }
     ];
-
+    
+    // funciones de modals de lecciones
     function modalLecciones(i) {
         bootbox.dialog({
             title: modalLesson[i].title,
@@ -227,6 +229,7 @@ $(document).ready(function() {
     });
     };
 
+    // funciones de modals de amenazas
     function modalAmenazas(i) {
         bootbox.dialog({
             title: modalThreat[i].title,
@@ -236,10 +239,12 @@ $(document).ready(function() {
     });
     };
 
+    // modals de lecciones
     $(".btn-lessons").click(function(event) {
         modalLecciones($(this).data('index'));
     });
 
+    // modals de amenazas
     $(".btn-threats").click(function(event) {
         modalAmenazas($(this).data('index'));
     });
