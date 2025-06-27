@@ -38,13 +38,13 @@ header{
 }
 .hero-section h1 {
     color: #fff; /* Verde para el título principal */
-    font-size: 3.5rem;
-    margin-top: 10%;
+    font-size: 3.0rem;
+    margin-top: 15%;
     margin-bottom: 20px;
 }
 .hero-section p {
     color: #fff;
-    font-size: 1.25rem;
+    font-size: 1.0rem;
     margin-bottom: 40px;
 }
 .zoom {
@@ -60,7 +60,7 @@ header{
     text-align: center;
 }
 
-/* Estilos para la imagen de cabecera en maincontent.html */
+/* Estilos para la imagen de cabecera en maincontent.html y lecciones.html */
 .header-image {
     filter: brightness(0.4); /* Oscurece la imagen de fondo */
 }
