@@ -226,7 +226,7 @@ $(document).ready(function() {
             message: modalLesson[i].text,
             size: 'large',
 
-    });
+        });
     };
 
     // funciones de modals de amenazas
@@ -236,7 +236,7 @@ $(document).ready(function() {
             message: modalThreat[i].text,
             size: 'large',
 
-    });
+        });
     };
 
     // modals de lecciones
