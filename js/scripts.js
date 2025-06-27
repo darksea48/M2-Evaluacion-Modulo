@@ -159,6 +159,7 @@ $(document).ready(function() {
         abrirFormModal();
     });
 
+    // arrays de modal de lecciones.html
     var modalLesson = [
         {
             title: '<h5 class="modal-title"><i class="fas fa-key me-2"></i>Contraseñas fuertes</h5>',
