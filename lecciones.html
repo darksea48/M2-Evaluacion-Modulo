@@ -5,23 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Mi CSS -->
     <link rel="stylesheet" href="css/styles.css">
+
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
     <!-- Bootbox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/6.0.4/bootbox.min.js"></script>
+
     <!-- Font Roboto -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <title>Recomendaciones - Protege tu Mundo Digital</title>
 </head>
 <body>
@@ -64,6 +71,66 @@
         </div>
     </header>
 
+    <!-- Placeholder para instruir en las amenazas más frecuentes -->
+     <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 bg-dark bg-gradient p-5 rounded-3">
+                <section id="amenazas" class="py-5 sweep-in">
+                    <div class="container">
+                        <h2 class="section-title">Las amenazas más frecuentes</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card w-100 h-100 bg-light text-dark shadow zoom">
+                                    <div class="card-body text-center">
+                                        <h3>Malware (incluyendo <span class="fst-italic">ransomware</span>)</h3>
+                                        <p><span class="fw-bold">Amenaza:</span> Software malicioso que infecta el dispositivo para robar datos, espiar actividades o bloquear archivos para pedir rescate <span class="fst-italic">(ransomware).</span></p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-threats" data-bs-toggle="modal" data-index="0">Más info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card w-100 h-100 bg-light text-dark shadow zoom">
+                                    <div class="card-body text-center">
+                                        <h3>Phishing</h3>
+                                        <p><span class="fw-bold">Amenaza:</span> Intentos de engaño para obtener datos sensibles haciéndose pasar por entidades legítimas mediante correos, mensajes o sitios web falsos.</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-threats" data-bs-toggle="modal" data-index="0">Más info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card w-100 h-100 bg-light text-dark shadow zoom">
+                                    <div class="card-body text-center">
+                                        <h3>Ataques de fuerza bruta y uso de credenciales filtradas</h3>
+                                        <p><span class="fw-bold">Amenaza:</span> Los atacantes adivinan contraseñas o reutilizan credenciales robadas en filtraciones para acceder a cuentas.</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-threats" data-bs-toggle="modal" data-index="0">Más info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card w-100 h-100 bg-light text-dark shadow zoom">
+                                    <div class="card-body text-center">
+                                        <h3>Exploits y vulnerabilidades no parcheadas</h3>
+                                        <p><span class="fw-bold">Amenaza:</span> Los atacantes aprovechan errores de seguridad en software o sistemas desactualizados.</p>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-threats" data-bs-toggle="modal" data-index="0">Más info</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+     </div>
+
     <!-- Placeholder para Contenido Educativo Detallado -->
     <div class="container-fluid">
         <div class="row">
@@ -90,7 +157,9 @@
                                             <div class="card-body">
                                                 <h5 class="card-title text-primary"><i class="fas fa-key me-2"></i> Contraseñas Fuertes</h5>
                                                 <p class="card-text">Aprende a crear contraseñas robustas y a gestionarlas de forma segura.</p>
-                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modal1">Ver más</button>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-lessons" data-bs-toggle="modal" data-index="0">Ver más</button>
                                             </div>
                                         </div>
                                     </div>
@@ -99,7 +168,9 @@
                                             <div class="card-body">
                                                 <h5 class="card-title text-primary"><i class="fas fa-shield-alt me-2"></i> Autenticación de Dos Factores (2FA)</h5>
                                                 <p class="card-text">Descubre cómo añadir una capa extra de seguridad a tus cuentas.</p>
-                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modal2">Ver más</button>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-lessons" data-bs-toggle="modal" data-index="1">Ver más</button>
                                             </div>
                                         </div>
                                     </div>
@@ -108,7 +179,9 @@
                                             <div class="card-body">
                                                 <h5 class="card-title text-primary"><i class="fas fa-database me-2"></i> Encriptación Básica</h5>
                                                 <p class="card-text">Entiende cómo funciona la encriptación para proteger tu información.</p>
-                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modal3">Ver más</button>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-lessons" data-bs-toggle="modal" data-index="2">Ver más</button>
                                             </div>
                                         </div>
                                     </div>
@@ -121,7 +194,9 @@
                                             <div class="card-body">
                                                 <h5 class="card-title text-primary"><i class="fas fa-envelope-open-text me-2"></i> Phishing y Fraude</h5>
                                                 <p class="card-text">Identifica y evita correos electrónicos y mensajes fraudulentos.</p>
-                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modal4">Ver más</button>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-lessons" data-bs-toggle="modal" data-index="3">Ver más</button>
                                             </div>
                                         </div>
                                     </div>
@@ -130,7 +205,9 @@
                                             <div class="card-body">
                                                 <h5 class="card-title text-primary"><i class="fas fa-bug me-2"></i> Malware y Virus</h5>
                                                 <p class="card-text">Conoce los diferentes tipos de software malicioso y cómo protegerte.</p>
-                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modal5">Ver más</button>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-lessons" data-bs-toggle="modal" data-index="4">Ver más</button>
                                             </div>
                                         </div>
                                     </div>
@@ -139,7 +216,9 @@
                                             <div class="card-body">
                                                 <h5 class="card-title text-primary"><i class="fas fa-hand-holding-usd me-2"></i> Ransomware</h5>
                                                 <p class="card-text">Qué es el ransomware y cómo puedes prevenir ser una víctima.</p>
-                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modal6">Ver más</button>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-lessons" data-bs-toggle="modal" data-index="5">Ver más</button>
                                             </div>
                                         </div>
                                     </div>
@@ -152,7 +231,9 @@
                                             <div class="card-body">
                                                 <h5 class="card-title text-primary"><i class="fas fa-wifi me-2"></i> Navegación Segura</h5>
                                                 <p class="card-text">Consejos para navegar por la web de forma segura y privada.</p>
-                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modal7">Ver más</button>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-lessons" data-bs-toggle="modal" data-index="6">Ver más</button>
                                             </div>
                                         </div>
                                     </div>
@@ -161,7 +242,9 @@
                                             <div class="card-body">
                                                 <h5 class="card-title text-primary"><i class="fas fa-mobile-alt me-2"></i> Seguridad en Dispositivos Móviles</h5>
                                                 <p class="card-text">Protege tu smartphone y tablet de amenazas.</p>
-                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modal8">Ver más</button>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-lessons" data-bs-toggle="modal" data-index="7">Ver más</button>
                                             </div>
                                         </div>
                                     </div>
@@ -170,7 +253,9 @@
                                             <div class="card-body">
                                                 <h5 class="card-title text-primary"><i class="fas fa-cloud-upload-alt me-2"></i> Copias de Seguridad</h5>
                                                 <p class="card-text">La importancia de hacer copias de seguridad de tus datos.</p>
-                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modal9">Ver más</button>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-lessons" data-bs-toggle="modal" data-index="8">Ver más</button>
                                             </div>
                                         </div>
                                     </div>
@@ -353,6 +438,35 @@
                             <div class="col-12">
                                 <p>Una lección crucial en el ámbito de la seguridad digital es la importancia de realizar copias de seguridad de tus datos de forma regular. Las copias de seguridad —o <span class="fst-italic">backups</span>— permiten recuperar información en caso de pérdida, daño del dispositivo, ataques informáticos (como <span class="fst-italic">Ransomware</span>), errores humanos o fallos del sistema. Sin una copia de respaldo, cualquier incidente inesperado podría significar la pérdida irreversible de documentos importantes, fotos, archivos laborales o información personal.</p>
                                 <p>Otra enseñanza valiosa es que una estrategia efectiva de respaldo no solo consiste en copiar los datos, sino en hacerlo de manera planificada y segura. Se recomienda aplicar la regla 3-2-1: mantener al menos tres copias de los datos, en dos tipos de almacenamiento diferentes (por ejemplo, disco duro externo y nube), y una copia fuera del entorno principal (fuera de línea o en la nube). Automatizar los respaldos, verificar que se completen correctamente y protegerlos con cifrado son prácticas que fortalecen la resiliencia digital. Hacer copias de seguridad no es solo una medida preventiva, sino una inversión en tranquilidad y continuidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAmenaza1" tabindex="-1" aria-labelledby="modalAmenaza1Title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Malware (incluyendo <span class="fst-italic">ransomware</span>)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <p>Software malicioso diseñado para dañar, infiltrarse o tomar el control de sistemas. El ransomware cifra archivos y exige un rescate para liberarlos, siendo uno de los tipos más devastadores. Otras variantes incluyen troyanos, spyware y adware, que roban información o espían al usuario.</p>
+
+                                <p><span class="fw-bold">Cómo mitigarlo:</span>
+                                    <ul>
+                                        <li>Mantener el sistema operativo y las aplicaciones siempre actualizadas.</li>
+                                        <li>Usar software antivirus y antimalware de buena reputación.</li>
+                                        <li>Evitar descargar archivos o programas de fuentes no confiables.</li>
+                                        <li>Hacer copias de seguridad periódicas en ubicaciones seguras (offline o en la nube)</li>
+                                    </ul>
+                                </p>
                             </div>
                         </div>
                     </div>
