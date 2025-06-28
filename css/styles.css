@@ -99,3 +99,14 @@ header{
 #stats.sweep-in {
     animation-delay: 0.3s;
 }
+
+.quiz {
+    list-style-type: upper-alpha;
+}
+
+ #carouselNews .carousel-item img {
+        height: 700px; /* Ajusta esta altura como desees */
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(0.4); /* Oscurece la imagen de fondo */
+    }

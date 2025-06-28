@@ -9,7 +9,9 @@ $(document).ready(function() {
         // Si 'isWide' es true, agrega las clases. Si es false, las quita.
         $('#navbar').toggleClass('bg-dark bg-gradient', isWide);
         // Si 'isWide' es false (!isWide es true), agrega la clase. Si es true, la quita.
-        $('#navbar').toggleClass('fixed-top text-align-end', !isWide);
+        $('#navbar').toggleClass('fixed-top', !isWide);
+        $('nav').toggleClass('text-align-end', !isWide);
+        $('.btn-nav').toggleClass('col-2 text-align-right', !isWide);
     }
 
     // Ejecutar la función al cargar la página para establecer el estado inicial
@@ -291,18 +293,15 @@ $(document).ready(function() {
             `,
             buttons: {
                 alt1: {
-                    label: "A",
                     respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
                     respuesta: `<p>Tener dos cuentas no significa tener más seguridad si usan contraseñas débiles o idénticas. La 2FA se basa en un segundo factor de verificación.</p>
                     `,
                 },
                 alt2: {
-                    label: "B",
                     respuestaTitle: `<span class="fw-bold fst-italic text-success">✅ Correcto.</span>`,
                     respuesta: `<p>La autenticación en dos pasos combina algo que sabes (contraseña) con algo que tienes (código, app o dispositivo) para reforzar la seguridad.</p>`,
                 },
                 alt3: {
-                    label: "C",
                     respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
                     respuesta: `<p>Usar la misma contraseña en varios sitios es riesgoso y facilita que un atacante acceda a múltiples cuentas si una se ve comprometida.</p>`,
                 }
@@ -320,18 +319,15 @@ $(document).ready(function() {
             `,
             buttons: {
                 alt1: {
-                    label: "A",
                     respuestaTitle: `<span class="fw-bold fst-italic text-success">✅ Correcto.</span>`,
                     respuesta: `<p>Mantener todo actualizado corrige vulnerabilidades, y las copias de seguridad te permiten restaurar los datos sin pagar rescates.</p>
                     `,
                 },
                 alt2: {
-                    label: "B",
                     respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
                     respuesta: `<p>Compartir contraseñas es peligroso y puede comprometer tu seguridad. Cada usuario debe mantener sus contraseñas privadas.</p>`,
                 },
                 alt3: {
-                    label: "C",
                     respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
                     respuesta: `<p>No hacer copias de seguridad te deja sin forma de recuperar tus datos si un ransomware los cifra.</p>`,
                 }
@@ -349,18 +345,15 @@ $(document).ready(function() {
             `,
             buttons: {
                 alt1: {
-                    label: "A",
                     respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
                     respuesta: `<p>Las fechas de nacimiento son fáciles de adivinar o encontrar en redes sociales. Es mejor usar contraseñas impredecibles y complejas.</p>
                     `,
                 },
                 alt2: {
-                    label: "B",
                     respuestaTitle: `<span class="fw-bold fst-italic text-success">✅ Correcto.</span>`,
                     respuesta: `<p>Usar una combinación de caracteres variados hace la contraseña más difícil de adivinar o descifrar mediante ataques automatizados.</p>`,
                 },
                 alt3: {
-                    label: "C",
                     respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
                     respuesta: `<p>Reutilizar la misma contraseña en todas partes es muy peligroso: si una cuenta se ve comprometida, todas quedan vulnerables.</p>`,
                 }
@@ -378,18 +371,15 @@ $(document).ready(function() {
             `,
             buttons: {
                 alt1: {
-                    label: "A",
                     respuestaTitle: `<span class="fw-bold fst-italic text-success">✅ Correcto.</span>`,
                     respuesta: `<p>Descargar solo de fuentes oficiales reduce el riesgo de instalar software malicioso disfrazado de aplicaciones legítimas.</p>
                     `,
                 },
                 alt2: {
-                    label: "B",
                     respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
                     respuesta: `<p>Ignorar actualizaciones deja abiertas vulnerabilidades que pueden ser explotadas por malware.</p>`,
                 },
                 alt3: {
-                    label: "C",
                     respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
                     respuesta: `<p>Hacer clic sin verificar es muy riesgoso: muchos ataques empiezan con enlaces maliciosos en correos.</p>`,
                 }
@@ -407,23 +397,150 @@ $(document).ready(function() {
             `,
             buttons: {
                 alt1: {
-                    label: "A",
                     respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
                     respuesta: `<p>Las copias de seguridad son una práctica de protección de datos, no un ataque. El phishing es un fraude que busca robar información.</p>
                     `,
                 },
                 alt2: {
-                    label: "B",
                     respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
                     respuesta: `<p>Eso describe mejor al ransomware. El phishing no instala software, sino que engaña para obtener tus datos.</p>`,
                 },
                 alt3: {
-                    label: "C",
                     respuestaTitle: `<span class="fw-bold fst-italic text-success">✅ Correcto.</span>`,
-                    respuesta: `<p> El phishing es un intento de suplantar la identidad de una entidad legítima para engañar al usuario y obtener datos sensibles.</p>`,
+                    respuesta: `<p>El phishing es un intento de suplantar la identidad de una entidad legítima para engañar al usuario y obtener datos sensibles.</p>`,
                 }
             }
         },
+        {
+            title: "Pregunta",
+            message: `
+            <p class="text-justify">¿Qué es el ransomware?</p>
+            <ol class="quiz">
+                <li>Un programa que cifra tus archivos y pide un rescate para liberarlos.</li>
+                <li>Un sitio web seguro con certificado SSL.</li>
+                <li>Un tipo de contraseña segura.</li>
+            </ol>
+            `,
+            buttons: {
+                alt1: {
+                    respuestaTitle: `<span class="fw-bold fst-italic text-success">✅ Correcto.</span>`,
+                    respuesta: `<p>El ransomware es un malware que bloquea el acceso a tus archivos y exige un pago para restaurarlos.</p>
+                    `,
+                },
+                alt2: {
+                    respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
+                    respuesta: `<p>Un sitio con SSL (https) protege la transmisión de datos, no es un tipo de malware.</p>`,
+                },
+                alt3: {
+                    respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
+                    respuesta: `<p>El ransomware no es una contraseña, es un ataque informático muy peligroso.</p>`,
+                }
+            }
+        },
+        {
+            title: "Pregunta",
+            message: `
+            <p class="text-justify">¿Qué práctica ayuda a proteger tu información en caso de ataque o pérdida del dispositivo?</p>
+            <ol class="quiz">
+                <li>Compartir tus contraseñas por correo para tener copia.</li>
+                <li>Hacer copias de seguridad periódicas.</li>
+                <li>Ignorar los avisos de actualización.</li>
+            </ol>
+            `,
+            buttons: {
+                alt1: {
+                    respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
+                    respuesta: `<p>Compartir contraseñas por correo es riesgoso y puede exponer tu información.</p>
+                    `,
+                },
+                alt2: {
+                    respuestaTitle: `<span class="fw-bold fst-italic text-success">✅ Correcto.</span>`,
+                    respuesta: `<p>Hacer copias de seguridad periódicas te permite recuperar tus datos en caso de fallo, robo o ataque.</p>`,
+                },
+                alt3: {
+                    respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
+                    respuesta: `<p>Ignorar actualizaciones deja tu dispositivo vulnerable a ataques conocidos.</p>`,
+                }
+            }
+        },
+        {
+            title: "Pregunta",
+            message: `
+            <p class="text-justify">¿Cuál es una forma de protegerte del phishing?</p>
+            <ol class="quiz">
+                <li>Hacer clic en cualquier enlace sin pensarlo.</li>
+                <li>Verificar cuidadosamente la dirección del remitente y los enlaces.</li>
+                <li>Usar siempre la misma contraseña en todos los sitios.</li>
+            </ol>
+            `,
+            buttons: {
+                alt1: {
+                    respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
+                    respuesta: `<p>Hacer clic sin verificar es una de las principales causas de infecciones y fraudes.</p>
+                    `,
+                },
+                alt2: {
+                    respuestaTitle: `<span class="fw-bold fst-italic text-success">✅ Correcto.</span>`,
+                    respuesta: `<p>Verificar remitentes y enlaces ayuda a detectar correos falsos o intentos de suplantación.</p>`,
+                },
+                alt3: {
+                    respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
+                    respuesta: `<p>Reutilizar contraseñas es muy riesgoso, sobre todo si caes en un intento de phishing.</p>`,
+                }
+            }
+        },
+        {
+            title: "Pregunta",
+            message: `
+            <p class="text-justify">¿Qué significa mantener tu software actualizado?</p>
+            <ol class="quiz">
+                <li>Instalar regularmente las actualizaciones y parches de seguridad.</li>
+                <li>Usar siempre la versión más antigua porque es más estable.</li>
+                <li>Ignorar los avisos de actualización para evitar molestias.</li>
+            </ol>
+            `,
+            buttons: {
+                alt1: {
+                    respuestaTitle: `<span class="fw-bold fst-italic text-success">✅ Correcto.</span>`,
+                    respuesta: `<p>Actualizar corrige vulnerabilidades conocidas que los atacantes podrían explotar.</p>
+                    `,
+                },
+                alt2: {
+                    respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
+                    respuesta: `<p>Las versiones antiguas pueden tener fallas de seguridad sin corregir.</p>`,
+                },
+                alt3: {
+                    respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
+                    respuesta: `<p>Ignorar actualizaciones es dejar la puerta abierta a los ciberataques.</p>`,
+                }
+            }
+        },
+        {
+            title: "Pregunta",
+            message: `
+            <p class="text-justify">¿Cómo ayuda la autenticación en dos pasos (2FA) a proteger tu cuenta?</p>
+            <ol class="quiz">
+                <li>Permite a cualquiera entrar más fácilmente.</li>
+                <li>Añade un segundo nivel de verificación además de la contraseña.</li>
+                <li>Reemplaza la contraseña por completo.</li>
+            </ol>
+            `,
+            buttons: {
+                alt1: {
+                    respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
+                    respuesta: `<p>2FA dificulta el acceso no autorizado, no lo facilita.</p>
+                    `,
+                },
+                alt2: {
+                    respuestaTitle: `<span class="fw-bold fst-italic text-success">✅ Correcto.</span>`,
+                    respuesta: `<p>2FA añade un segundo factor de verificación (como un código o huella) que protege incluso si la contraseña se filtra.</p>`,
+                },
+                alt3: {
+                    respuestaTitle: `<span class="fw-bold fst-italic text-danger">❌ Incorrecto.</span>`,
+                    respuesta: `<p>2FA no reemplaza la contraseña: la complementa para mayor seguridad.</p>`,
+                }
+            }
+        }
     ];
 
     function modalQuiz(i) {
@@ -433,7 +550,8 @@ $(document).ready(function() {
             size: 'large',
             buttons: {  
                 alt1: {
-                    label: modalQuestion[i].buttons.alt1.label,
+                    label: "A",
+                    className: 'btn-warning',
                     callback: function() {
                         bootbox.alert({
                             title: modalQuestion[i].buttons.alt1.respuestaTitle,
@@ -442,7 +560,8 @@ $(document).ready(function() {
                     }
                 },
                 alt2: {
-                    label: modalQuestion[i].buttons.alt2.label,
+                    label: "B",
+                    className: 'btn-success',
                     callback: function() {
                         bootbox.alert({
                             title: modalQuestion[i].buttons.alt2.respuestaTitle,
@@ -451,7 +570,8 @@ $(document).ready(function() {
                     }         
                 },
                 alt3: {
-                    label: modalQuestion[i].buttons.alt3.label,
+                    label: "C",
+                    className: 'btn-danger',
                     callback: function() {
                         bootbox.alert({
                             title: modalQuestion[i].buttons.alt3.respuestaTitle,
@@ -463,7 +583,7 @@ $(document).ready(function() {
         });
     };
 
-    $("#btn-quiz").click(function(event) {
+    $(".btn-quiz").click(function(event) {
         var index = Math.floor(Math.random() * modalQuestion.length);
         modalQuiz(index);
     });
