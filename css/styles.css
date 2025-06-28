@@ -29,6 +29,9 @@ header{
     height: 300px;
     overflow: hidden;
 }
+.text-align-end{
+    text-align: end;
+}
 .hero-section {
     height: 100%;
     overflow: hidden;

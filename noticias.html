@@ -18,7 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/6.0.4/bootbox.min.js"></script>
 
     <!-- Font Roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
 
@@ -29,13 +29,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <title>Información Relevante - Protege tu Mundo Digital</title>
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
+
+    <title>Noticias - Protege tu Mundo Digital</title>
 </head>
 <body>
-    <!-- Navbar -->
+     <!-- Navbar -->
     <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="#">
                 <i class="bi bi-shield-fill-check"></i><i class="bi bi-pc-display"></i>
             </a>
             <!-- Botón Toggler para pantallas pequeñas -->
@@ -49,16 +54,16 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Lo que debes saber</a>
+                        <a class="nav-link" href="maincontent.html">Lo que debes saber</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="lecciones.html">Como protegerte</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="noticias.html">Debes enterarte</a>
+                        <a class="nav-link active" aria-current="page" href="noticias.html">Debes enterarte</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-outline-light btn-sm text-primary contact-form-button" href="#">Contáctanos</a>
+                        <a class="nav-link btn btn-outline-light btn-sm text-primary contact-form-button" href="#" data-bs-toggle="modal">Contáctanos</a>
                     </li>
                 </ul>
             </div>
@@ -70,14 +75,14 @@
     <header class="position-relative">
         <img class="d-block w-100 h-100 object-fit-cover header-image" src="https://i.postimg.cc/zG434yCQ/img-1.png" alt="Imagen de cabecera">
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-100 sweep-in">
-            <h1 class="display-2 fw-bold text-shadow fs-1">Información Relevante</h1>
+            <h1 class="display-2 fw-bold text-shadow fs-1">Debes enterarte de esto</h1>
         </div>
     </header>
 
-    <!-- Sección "¿Por Qué la Ciberseguridad?" -->
-    <section id="why-cybersecurity" class="py-5 bg-dark bg-gradient sweep-in">
-        <div class="container">
-            <h2 class="section-title fs-1">¿Por qué es importante la Ciberseguridad?</h2>
+    <!-- Sección Carrusel de casos reales -->
+    <section id="cases" class="py-5 bg-dark bg-gradient sweep-in">
+        <div class="container-fluid">
+            <h2 class="section-title fs-1">Casos reales de ciberseguridad</h2>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
                     <div class="card w-100 h-100 bg-light text-dark shadow zoom">
@@ -119,45 +124,20 @@
         </div>
     </section>
 
-    <!-- Placeholder para Sección de Cifras y Datos Impactantes -->
-    <section id="stats" class="py-5 bg-light sweep-in">
-        <div class="container">
-            <h2 class="section-title text-primary fs-1">Cifras y Datos Impactantes</h2>
-            <div class="row text-center">
-                <div class="col-md-3 mb-4">
-                    <div class="p-4 bg-white rounded shadow-sm h-100 zoom">
-                        <h4 class="text-primary"><span class="counter" id="phishing-count" data-target="3">0</span>+ Mil Millones</h4>
-                        <p>Intentos de phishing al día</p>
-                        <p>Se estima que se envían 3.400 millones de correos electrónicos de phishing diariamente a nivel mundial, lo que suma <span class="text-danger fw-bold">más de 1 billón de intentos de phishing al año</span>, según un informe de StationX. Esta cifra subraya la omnipresencia del phishing como una amenaza cibernética significativa.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="p-4 bg-white rounded shadow-sm h-100 zoom">
-                        <h4 class="text-primary">Más de $<span class="counter" id="cost-count" data-target="4.88">0</span>M</h4>
-                        <p>Costo promedio global de una brecha de datos</p>
-                        <p>Se estima en US$4,88 millones el coste medio global de una filtración de datos, según información entregada por IBM. <span class="text-danger fw-bold">Un aumento del 10% respecto del año pasado</span> y el total más alto hasta la fecha.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="p-4 bg-white rounded shadow-sm h-100 zoom">
-                        <h4 class="text-primary"><span class="counter" id="security-count" data-target="95">0</span>%</h4>
-                        <p>De las brechas de seguridad se deben a error humano</p>
-                        <p>El <span class="text-danger fw-bold">error humano superó a las fallas tecnológicas</span> como factor contribuyente a las violaciones de datos en 2024, con un 95% de las violaciones involucrando errores humanos, según el Informe sobre el estado del riesgo humano de Mimecast publicado el martes.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="p-4 bg-white rounded shadow-sm h-100 zoom">
-                        <h4 class="text-primary">1 de cada <span class="counter" id="cost-count" data-target="3">0</span></h4>
-                        <p>Vulneraciones de información no dejan huella</p>
-                        <p>Una de cada tres violaciones informáticas involucran datos ocultos, según IBM, lo que muestra que la proliferación de datos hace que sea más difícil rastrearlos y protegerlos. Esta información nos hace un tremendo llamado de atención:</p>
-                        <p><span class="text-danger fw-bold text-uppercase">cuidar nuestros datos más sensibles</span></p>
-                    </div>
+    <!-- Seccion Quiz -->
+     <section id="quiz" class="py-5 bg-primary bg-white sweep-in">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-sm-10 col-md-6 col-lg-4">
+                    <h3>¡Pon a prueba tu conocimiento sobre ciberseguridad!</h3>
+                    <p>Ingresa a este botón para responder a una pregunta sobre ciberseguridad.</p>
+                    <button type="button" id="btn-quiz" class="btn btn-sm btn-outline-primary mt-2" data-bs-toggle="modal" data-index="0">Más info</button>
                 </div>
             </div>
         </div>
-    </section>
-    
-     <!-- Footer -->
+     </section>
+
+    <!-- Footer -->
     <footer id="footer" class="bg-dark text-white text-center py-3">
         <p>Douglas Suárez Zamorano</p><p>Copyright 2025 - Todos los derechos reservados</p>
         <a href="#" class="btn btn-outline-light btn-sm contact-form-button" data-bs-toggle="modal" data-bs-target="#contactModal">Contáctanos</a>
