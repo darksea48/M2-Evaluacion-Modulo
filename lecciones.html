@@ -33,7 +33,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark bg-gradient">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <i class="bi bi-shield-fill-check"></i><i class="bi bi-pc-display"></i>
@@ -46,7 +46,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item d-flex justify-content-end">
-                        <a class="nav-link btn btn-outline-light btn-sm text-success btn-quiz btn-nav col-2" data-bs-toggle="modal" data-index="0">Responder pregunta de Quiz</a>
+                        <a class="nav-link text-success btn-quiz" data-bs-toggle="modal" data-index="0">Responder Quiz</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
@@ -61,7 +61,7 @@
                         <a class="nav-link" href="noticias.html">Debes enterarte</a>
                     </li>
                     <li class="nav-item d-flex justify-content-end">
-                        <a class="nav-link btn btn-outline-light btn-sm text-primary contact-form-button col-2 btn-nav" href="#" data-bs-toggle="modal">Contáctanos</a>
+                        <a class="nav-link text-primary contact-form-button" href="#" data-bs-toggle="modal">Contáctanos</a>
                     </li>
                 </ul>
             </div>
@@ -80,7 +80,7 @@
     <!-- Placeholder para instruir en las amenazas más frecuentes -->
      <div class="container-fluid">
         <div class="row">
-            <div class="col-12 bg-dark bg-gradient p-5 rounded-3">
+            <div class="col-12 bg-dark bg-gradient p-5">
                 <section id="amenazas" class="py-5 sweep-in">
                     <div class="container">
                         <h2 class="section-title fs-1">Las amenazas más frecuentes</h2>
@@ -92,7 +92,7 @@
                                         <p><span class="fw-bold">Amenaza:</span> Software malicioso que infecta el dispositivo para robar datos, espiar actividades o bloquear archivos para pedir rescate <span class="fst-italic">(ransomware).</span></p>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-threats" data-bs-toggle="modal" data-index="0">Más info</button>
+                                        <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-threats" data-bs-toggle="modal" data-index="0">Ver más</button>
                                     </div>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@
                                         <p><span class="fw-bold">Amenaza:</span> Intentos de engaño para obtener datos sensibles haciéndose pasar por entidades legítimas mediante correos, mensajes o sitios web falsos.</p>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-threats" data-bs-toggle="modal" data-index="1">Más info</button>
+                                        <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-threats" data-bs-toggle="modal" data-index="1">Ver más</button>
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +114,7 @@
                                         <p><span class="fw-bold">Amenaza:</span> Los atacantes adivinan contraseñas o reutilizan credenciales robadas en filtraciones para acceder a cuentas.</p>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-threats" data-bs-toggle="modal" data-index="2">Más info</button>
+                                        <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-threats" data-bs-toggle="modal" data-index="2">Ver más</button>
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +125,7 @@
                                         <p><span class="fw-bold">Amenaza:</span> Los atacantes aprovechan errores de seguridad en software o sistemas desactualizados.</p>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-threats" data-bs-toggle="modal" data-index="3">Más info</button>
+                                        <button type="button" class="btn btn-sm btn-outline-primary mt-2 btn-threats" data-bs-toggle="modal" data-index="3">Ver más</button>
                                     </div>
                                 </div>
                             </div>
@@ -140,7 +140,7 @@
     <!-- Placeholder para Contenido Educativo Detallado -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 bg-primary p-5 rounded-3">
+            <div class="col-12 bg-primary p-5">
                 <section id="lecciones" class="py-5 sweep-in">
                     <div class="container">
                         <h2 class="section-title fs-1">Nuestras recomendaciones de Ciberseguridad</h2>
@@ -157,7 +157,7 @@
                         </ul>
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-fundamentos" role="tabpanel" aria-labelledby="pills-fundamentos-tab">
-                                <div class="row g-4">
+                                <div class="row justify-content-center g-4">
                                     <div class="col-md-6 col-lg-4">
                                         <div class="card h-100 shadow-sm rounded-3">
                                             <div class="card-body">
@@ -194,7 +194,7 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="pills-amenazas" role="tabpanel" aria-labelledby="pills-amenazas-tab">
-                                <div class="row g-4">
+                                <div class="row justify-content-center g-4">
                                     <div class="col-md-6 col-lg-4">
                                         <div class="card h-100 shadow-sm rounded-3">
                                             <div class="card-body">
@@ -231,7 +231,7 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="pills-practicas" role="tabpanel" aria-labelledby="pills-practicas-tab">
-                                <div class="row g-4">
+                                <div class="row justify-content-center g-4">
                                     <div class="col-md-6 col-lg-4">
                                         <div class="card h-100 shadow-sm rounded-3">
                                             <div class="card-body">

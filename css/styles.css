@@ -77,6 +77,11 @@ header{
     margin-left: auto;
     margin-right: auto;
 }
+.contact-form-button:hover, .btn-quiz:hover {
+    background-color: #fff;
+    padding-inline: 10px;
+    border-radius: 10px;
+}
 
 /* Animación de barrido desde arriba */
 @keyframes sweep-down {

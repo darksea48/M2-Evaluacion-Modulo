@@ -7,7 +7,6 @@ $(document).ready(function() {
         const isWide = $(window).width() > 990;
         // toggleClass(className, switch)
         // Si 'isWide' es true, agrega las clases. Si es false, las quita.
-        $('#navbar').toggleClass('bg-dark bg-gradient', isWide);
         // Si 'isWide' es false (!isWide es true), agrega la clase. Si es true, la quita.
         $('#navbar').toggleClass('fixed-top', !isWide);
         $('nav').toggleClass('text-align-end', !isWide);
@@ -241,10 +240,11 @@ $(document).ready(function() {
         {
             title: '<h5 class="modal-title">Ataques de fuerza bruta y uso de credenciales filtradas</h5>',
             text: `<p class="text-justify">Consisten en probar combinaciones de contraseñas hasta adivinar la correcta, o en reutilizar credenciales robadas de otras filtraciones. Aprovechan contraseñas débiles o repetidas para acceder a cuentas personales y corporativas.</p>
-            <p><span class="fw-bold">Cómo mitigarlo:</span> <ul> <li>Usar contraseñas largas, únicas y complejas para cada cuenta.</li> <li>Activar la autenticación en dos pasos (2FA) siempre que sea posible.</li> <li>Utilizar un gestor de contraseñas para almacenar y generar claves seguras.</li> <li>Cambiar contraseñas inmediatamente si se sospecha de un acceso no autorizado.</li> </ul></p>`,
+            <p><span class="fw-bold">Cómo mitigarlo:</span> <ul> <li>Usar contraseñas largas, únicas y complejas para cada cuenta.</li> <li>Activar la autenticación en dos pasos (2FA) siempre que sea posible.</li> <li>Utilizar un gestor de contraseñas para almacenar y generar claves seguras.</li> <li>Cambiar contraseñas inmediatamente si se sospecha de un acceso no autorizado.</li> </ul></p>
+            <p>Puedes ver si tu contraseña ha sido vulnerada, o tus datos han sido compartidos en línea, revisando en el siguiente enlace: <a href="https://haveibeenpwned.com/" target="_blank">https://haveibeenpwned.com/</a></p>`,
         },
         {
-            title: '<h5 class="modal-title">Phishing</h5>',
+            title: '<h5 class="modal-title">Exploits y vulnerabilidades no parcheadas</h5>',
             text: `<p class="text-justify">Ataques que se aprovechan de fallos de seguridad en software o sistemas operativos desactualizados. Los ciberdelincuentes utilizan estas debilidades para obtener acceso no autorizado o instalar malware en los dispositivos.</p>
             <p><span class="fw-bold">Cómo mitigarlo:</span> <ul> <li>Mantener todos los sistemas, aplicaciones y dispositivos actualizados con los parches de seguridad más recientes.</li> <li>Desinstalar programas innecesarios o que ya no se actualicen.</li> <li>Usar firewalls y herramientas de seguridad para monitorear el tráfico sospechoso.</li> <li>Limitar los permisos y el acceso solo a quienes realmente lo necesiten.</li> </ul></p>`,
         }
