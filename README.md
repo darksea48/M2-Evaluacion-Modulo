@@ -1,46 +1,59 @@
-# Protege tu Mundo Digital
+# Sitio Web Educativo sobre Ciberseguridad
 
 ![Captura de pantalla del sitio web (ejemplo)](https://i.postimg.cc/gkqZC533/screenshot-sitio.png)
 
-## Descripción del Proyecto
+Un sitio web interactivo y de varias páginas diseñado para educar a los usuarios sobre conceptos fundamentales de ciberseguridad de una manera atractiva y fácil de entender.
 
-Este proyecto es un sitio web educativo diseñado para concienciar y enseñar a los usuarios sobre los fundamentos de la ciberseguridad y las mejores prácticas para proteger su información personal en el mundo digital. Ofrece información relevante, cifras impactantes y lecciones interactivas sobre temas como contraseñas seguras, autenticación de dos factores, phishing, malware y navegación segura.
+## ✨ Características Principales
 
-El sitio está construido con un enfoque en la experiencia de usuario, incorporando animaciones sutiles y modales dinámicos para presentar el contenido de manera atractiva y accesible.
+Este proyecto ha sido actualizado con varias funcionalidades interactivas para mejorar la experiencia del usuario:
 
-## Características Principales
+*   **Diseño Responsivo:** Totalmente adaptable a diferentes tamaños de pantalla (móvil, tablet, escritorio) gracias a Bootstrap 5.
+*   **Navegación Dinámica:** La barra de navegación se ajusta y se fija en la parte superior en pantallas pequeñas para una mejor usabilidad.
+*   **Contenido Interactivo con Modales:**
+    *   **Lecciones de Ciberseguridad:** Tarjetas interactivas que abren ventanas modales (usando Bootbox.js) con información detallada sobre temas clave como contraseñas seguras, 2FA, phishing, etc.
+    *   **Amenazas Comunes:** Una sección dedicada a explicar las ciberamenazas más frecuentes y cómo mitigarlas, también presentada en modales.
+    *   **Formulario de Contacto:** Un botón de contacto abre un modal con un formulario que incluye validación de campos antes de enviar.
+*   **Quiz Interactivo:** Un botón "Pon a Prueba tu Conocimiento" lanza un quiz con preguntas aleatorias sobre ciberseguridad, proporcionando feedback instantáneo sobre las respuestas.
+*   **Animaciones Dinámicas:**
+    *   **Contadores Animados:** Estadísticas que se animan y cuentan hacia arriba cuando el usuario se desplaza y las visualiza, implementado con `IntersectionObserver`.
+    *   **Efectos Hover:** Retroalimentación visual en las tarjetas de características al pasar el cursor.
+*   **Contenido Actualizado Automáticamente:** El año en el pie de página se actualiza automáticamente a través de JavaScript.
 
--   **Diseño Responsivo**: Adaptado para verse bien en dispositivos de todos los tamaños (móviles, tablets, escritorio).
--   **Secciones Educativas**: Contenido organizado en pestañas sobre fundamentos, amenazas comunes y mejores prácticas de ciberseguridad.
--   **Modales Interactivos**: Cada lección se abre en un modal para una experiencia de lectura enfocada.
--   **Formulario de Contacto Dinámico**: Un modal de contacto que se carga dinámicamente y cuenta con validación de datos.
--   **Animaciones al Scroll**: Efectos de "barrido desde arriba" para las secciones principales y contadores animados que se activan al hacer scroll.
--   **Carrusel de Imágenes**: Un carrusel de imágenes en la página de inicio para una presentación visual atractiva.
--   **Navegación Intuitiva**: Menú de navegación claro y fácil de usar.
+## 🚀 Tecnologías Utilizadas
 
-## Tecnologías Utilizadas
+*   **Frontend:**
+    *   HTML5
+    *   CSS3
+    *   Bootstrap 5
+    *   JavaScript (ES6+)
+*   **Librerías:**
+    *   jQuery: Para la manipulación del DOM y la gestión de eventos.
+    *   Bootbox.js: Para la creación de diálogos y modales programáticos basados en Bootstrap.
+    *   Font Awesome: Para la iconografía.
+    *   Swiper.js: Para carruseles interactivos.
 
--   **HTML5**: Estructura del contenido.
--   **CSS3**: Estilos personalizados.
--   **Bootstrap 5.3**: Framework CSS para el diseño responsivo y componentes UI (Navbar, Cards, Modals, Tabs, Carousel, etc.).
--   **jQuery 3.7.1**: Para la manipulación del DOM, animaciones y la lógica de carga dinámica del modal de contacto.
--   **Font Awesome 6.5.2**: Iconos para mejorar la interfaz de usuario.
--   **Google Fonts (Roboto)**: Tipografía para el proyecto.
--   **Swiper.js 11**: Para dinamismo de las tarjetas de maincontent.html.
+## 🔧 Instalación y Uso
 
-## Estructura del Proyecto
+Como es un proyecto de frontend estático, no requiere un proceso de instalación complejo.
+
+1.  Clona o descarga este repositorio.
+2.  Abre el archivo `index.html` en tu navegador web preferido.
+
+> **Nota:** Todas las dependencias se cargan a través de CDNs, por lo que se requiere una conexión a internet para que el sitio funcione correctamente.
+
+## 📂 Estructura del Proyecto
+
+La estructura de archivos del proyecto es la siguiente:
 
 ```
-M2-EvaluacionModulo/
+.
+├── index.html         # Archivo principal de la página
+├── README.md          # Documentación del proyecto
 ├── css/
-│   └── styles.css          # Estilos CSS personalizados
-├── js/
-│   └── scripts.js          # Lógica JavaScript (jQuery)
-├── index.html              # Página de inicio
-├── maincontent.html        # Página con información relevante y estadísticas
-├── lecciones.html          # Página con lecciones detalladas y modales de contenido
-├── modal.html              # Contenido del formulario de contacto (cargado dinámicamente en los sitios como una ventana modal)
-└── README.md               # Este archivo
+│   └── styles.css     # Hoja de estilos personalizados
+└── js/
+    └── scripts.js     # Lógica de la aplicación, interacciones y modales
 ```
 
 ## Cómo Ejecutar el Proyecto Localmente
