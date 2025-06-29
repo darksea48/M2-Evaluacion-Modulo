@@ -11,7 +11,7 @@ $(document).ready(function() {
         $('#navbar').toggleClass('fixed-top', !isWide);
         $('nav').toggleClass('text-align-end', !isWide);
         $('.btn-nav').toggleClass('text-align-right', !isWide);
-        $('.contact-form-button').toggleClass('ms-5', isWide);
+        $('nav.contact-form-button').toggleClass('ms-5', isWide);
     }
 
 
