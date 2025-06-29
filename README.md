@@ -46,7 +46,6 @@ M2-EvaluacionModulo/
 ├── index.html              # Página de inicio
 ├── maincontent.html        # Página con información relevante y estadísticas
 ├── lecciones.html          # Página con lecciones detalladas y modales de contenido
-├── modal.html              # Contenido del formulario de contacto (cargado dinámicamente en los sitios como una ventana modal)
 └── README.md               # Este archivo
 ```
 
