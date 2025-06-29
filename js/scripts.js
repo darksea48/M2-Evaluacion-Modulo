@@ -10,8 +10,10 @@ $(document).ready(function() {
         // Si 'isWide' es false (!isWide es true), agrega la clase. Si es true, la quita.
         $('#navbar').toggleClass('fixed-top', !isWide);
         $('nav').toggleClass('text-align-end', !isWide);
-        $('.btn-nav').toggleClass('col-2 text-align-right', !isWide);
+        $('.btn-nav').toggleClass('text-align-right', !isWide);
+        $('.btn-quiz').toggleClass('me-5', isWide);
     }
+
 
     // Ejecutar la función al cargar la página para establecer el estado inicial
     checkWidth();

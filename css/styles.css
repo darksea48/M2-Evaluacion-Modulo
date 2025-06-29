@@ -9,7 +9,6 @@ body{
     flex-direction: column;
     font-family: "Roboto", sans-serif;
 }
-
 #header {
     height: 100vh; /* 100% de la altura del viewport (ventana) */
 }
